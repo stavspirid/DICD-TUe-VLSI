@@ -10,9 +10,9 @@ Quinten Kustermans ([quinten.kustermans@home.nl](mailto:quinten.kustermans@home.
 
 | Gate         | Schematic                                                                                                | Transistors |
 | ------------ | -------------------------------------------------------------------------------------------------------- | ----------- |
-| **Inverter** | ![Inverter](https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/inverter_sch.png) | 2           |
-| **NOR**      | ![NOR](https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/nor_sch.png)           | 4           |
-| **NAND**     | ![NAND](https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/nand_sch.png)         | 4           |
+| **Inverter** | <img src="https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/inverter_sch.png" height="200"> | 2           |
+| **NOR**      | <img src="https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/nor_sch.png" height="200">           | 4           |
+| **NAND**     | <img src="https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/nand_sch.png" height="200">         | 4           |
 
 **NMOS**: 90nm width | **PMOS**: 180nm width (2:1 ratio for balanced timing)
 
@@ -26,9 +26,9 @@ Selected implementation: `(A + B) + (A ∗ B)` using 3 gates (2×NOR, 1×AND)
 
 | Cell       | Schematic                                                                                       | Transistors |
 | ---------- | ----------------------------------------------------------------------------------------------- | ----------- |
-| **Buffer** | ![Buffer](https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/buffer_un_sch.png) | 8           |
-| **Black**  | ![Black](https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/black_un_sch.png)   | 18          |
-| **Gray**   | ![Gray](https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/gray_un_sch.png)     | 12          |
+| **Buffer** | <img src="https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/buffer_un_sch.png" height="200"> | 8           |
+| **Black**  | <img src="https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/black_un_sch.png" height="200">   | 18          |
+| **Gray**   | <img src="https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/gray_un_sch.png" height="200">     | 12          |
 
 ### Optimized Cells (Even/Odd Variants)
 Compound gate technique reduces transistor count:
@@ -40,20 +40,20 @@ Compound gate technique reduces transistor count:
 
 ### Architecture
 
-![Top-Level|80](https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/brent-kung_top_sch.png)
+<img src="https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/brent-kung_top_sch.png" height="300">
 
 ### Implementations
 
 | Version         | Schematic                                                                                                  | Transistors | Area (μm²) |
 | --------------- | ---------------------------------------------------------------------------------------------------------- | ----------- | ---------- |
-| **Unoptimized** | ![Unoptimized\|101](https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/adder_un_sch.png)\| | 228         | 130.87     |
-| **Optimized**   | ![Optimized](https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/adder_op_sch.png)          | 160         | 109.13     |
+| **Unoptimized** | <img src="https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/adder_un_sch.png" width="400"> | 228         | 130.87     |
+| **Optimized**   | <img src="https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/adder_op_sch.png" width="400">          | 160         | 109.13     |
 
 **Improvement**: 30% fewer transistors, 16.6% smaller area
 
 ### Boost Buffers
 
-![Boost Buffer|97](https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/boost_buffer_sch.png)
+<img src="https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/boost_buffer_sch.png" height="270">
 
 2-stage inverter chains improve timing:
 
@@ -66,13 +66,13 @@ Compound gate technique reduces transistor count:
 
 | NAND                                                                                                    | NOR                                                                                              |
 | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| ![NAND Layout\|107](https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/nand_layout.png) | ![NOR Layout](https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/nor_layout.png) |
+| <img src="https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/nand_layout.png"> | <img src="https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/nor_layout.png"> |
 
 ### Complete Layouts
 
 | Unoptimized (14.41×9.09 μm)                                                                                | Optimized (14.60×7.48 μm)                                                                              |
 | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| ![Unoptimized Layout](https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/unopt_layout.png) | ![Optimized Layout](https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/opt_layout.png) |
+| <img src="https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/unopt_layout.png" height="500"> | <img src="https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/opt_layout.png" height="500"> |
 
 **Layout Strategy**: Lane-based design with hierarchical metal layers (M1-M5)
 
