@@ -66,7 +66,7 @@ Compound gate technique reduces transistor count:
 
 | NAND                                                                                                    | NOR                                                                                              |
 | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| <img src="https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/nand_layout.png"> | <img src="https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/nor_layout.png"> |
+| <img src="https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/nand_layout.png" height="300"> | <img src="https://raw.githubusercontent.com/stavspirid/DICD-TUe-VLSI/main/resources/nor_layout.png" height="300"> |
 
 ### Complete Layouts
 
